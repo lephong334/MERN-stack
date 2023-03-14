@@ -1,38 +1,56 @@
-.App {
+/* Public pages */
+.public {
+	position: relative;
+	background: url('./assets/landing.jpg') no-repeat center center/cover;
+	height: 100vh;
+}
+
+.dark-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+
+.public-inner {
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.public-inner form {
+	width: 30%;
+  justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+
+.public-inner h1,
+.public-inner h4,
+.public-inner p {
+	color: white;
+}
+
+/* Header, Footer */
+.dash-header {
+  background-color: #579928;
+}
+
+.dash-header a {
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dash-footer {
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Dashboard */
+.dashboard {
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
